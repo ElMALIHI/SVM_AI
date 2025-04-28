@@ -68,6 +68,9 @@ importers:
       remotion:
         specifier: ^4.0.286
         version: 4.0.286(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      short-video-maker:
+        specifier: ^1.1.1
+        version: 1.1.1
       zod:
         specifier: ^3.24.2
         version: 3.24.2
@@ -2282,6 +2285,10 @@ packages:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
 
+  short-video-maker@1.1.1:
+    resolution: {integrity: sha512-YJtxaHes+kC9IIxfo43aqlL/OovRrpK2rynlw2YYgcRNqS6U/y4RaXfwIZdLfvbL0Zy6Wjl8YoqqyMm2VtgXSw==}
+    hasBin: true
+
   side-channel-list@1.0.0:
     resolution: {integrity: sha512-FCLHtRD/gnpCiCHEiJLOwdmFP+wzCmDEkc9y7NsYxeF4u7Btsn1ZuwgwJGxImImHicJArLP4R0yX4c2KCrMrTA==}
     engines: {node: '>= 0.4'}
@@ -3177,14 +3184,14 @@ snapshots:
     dependencies:
       '@remotion/studio': 4.0.286(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@remotion/studio-shared': 4.0.286(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      css-loader: 5.2.7(webpack@5.96.1(esbuild@0.25.0))
+      css-loader: 5.2.7(webpack@5.96.1)
       esbuild: 0.25.0
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
       react-refresh: 0.9.0
       remotion: 4.0.286(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       source-map: 0.7.3
-      style-loader: 4.0.0(webpack@5.96.1(esbuild@0.25.0))
+      style-loader: 4.0.0(webpack@5.96.1)
       webpack: 5.96.1(esbuild@0.25.0)
     transitivePeerDependencies:
       - '@swc/core'
@@ -3917,7 +3924,7 @@ snapshots:
       shebang-command: 2.0.0
       which: 2.0.2
 
-  css-loader@5.2.7(webpack@5.96.1(esbuild@0.25.0)):
+  css-loader@5.2.7(webpack@5.96.1):
     dependencies:
       icss-utils: 5.1.0(postcss@8.5.3)
       loader-utils: 2.0.4
@@ -5020,6 +5027,39 @@ snapshots:
 
   shebang-regex@3.0.0: {}
 
+  short-video-maker@1.1.1:
+    dependencies:
+      '@ffmpeg-installer/ffmpeg': 1.1.0
+      '@modelcontextprotocol/sdk': 1.9.0
+      '@remotion/bundler': 4.0.286(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@remotion/cli': 4.0.286(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@remotion/google-fonts': 4.0.286(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@remotion/install-whisper-cpp': 4.0.286
+      '@remotion/renderer': 4.0.286(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@remotion/zod-types': 4.0.286(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.24.2)
+      content-type: 1.0.5
+      cuid: 3.0.0
+      dotenv: 16.4.7
+      express: 5.1.0
+      fluent-ffmpeg: 2.1.3
+      fs-extra: 11.3.0
+      kokoro-js: 1.2.0
+      nock: 14.0.3
+      pino: 9.6.0
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+      remotion: 4.0.286(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      zod: 3.24.2
+      zod-to-json-schema: 3.24.5(zod@3.24.2)
+    transitivePeerDependencies:
+      - '@swc/core'
+      - bufferutil
+      - canvas
+      - supports-color
+      - uglify-js
+      - utf-8-validate
+      - webpack-cli
+
   side-channel-list@1.0.0:
     dependencies:
       es-errors: 1.3.0
@@ -5113,7 +5153,7 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
-  style-loader@4.0.0(webpack@5.96.1(esbuild@0.25.0)):
+  style-loader@4.0.0(webpack@5.96.1):
     dependencies:
       webpack: 5.96.1(esbuild@0.25.0)
 
